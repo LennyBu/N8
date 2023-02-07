@@ -1,0 +1,10 @@
+﻿@model LoginViewModel
+
+@using (Html.BeginForm())
+{
+    <input class="form-control" asp-for="username" name="username" placeholder="Gebruikersnaam" runat="server" style="text-align: center;" />
+    <input class="form-control" asp-for="password" name="password" placeholder="Paswoord" runat="server" style="text-align: center;" type="password" />
+    <input type="submit" value="LoginAccount" class="btn btn-primary"/>
+
+}
+

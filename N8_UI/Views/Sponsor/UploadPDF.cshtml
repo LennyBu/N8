@@ -1,0 +1,27 @@
+﻿@model SponsorViewModel
+
+@{
+    ViewData["Title"] = "UploadPDF";
+}
+
+<h1>UploadPDF</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="labels" id="Tickets">Aantal tickets beschikbaar: 10</td>
+            <td class="labels">
+                <form asp-action="uploadPDF" method="post" enctype="multipart/form-data">
+                    <input asp-for="sponsorName" type="hidden">
+                    <input type="file" name="pdfTicket"/>
+                    <input type="submit" value="Uploaden"/>
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>

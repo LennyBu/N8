@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N8_Data", "N8_Data\N8_Data.csproj", "{7EBBF4E8-8FF7-465E-99E8-CBD05E7D8D68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N8_Data", "N8_Data\N8_Data.csproj", "{7EBBF4E8-8FF7-465E-99E8-CBD05E7D8D68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N8_UI", "N8_UI\N8_UI.csproj", "{3E0F4D6A-EB38-4A31-B9BA-64E41CA343F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N8_UI", "N8_UI\N8_UI.csproj", "{3E0F4D6A-EB38-4A31-B9BA-64E41CA343F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N8_Services", "N8_Services\N8_Services.csproj", "{49172FF8-DACA-41A0-9FCC-8D575FE7A03C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N8_Services", "N8_Services\N8_Services.csproj", "{49172FF8-DACA-41A0-9FCC-8D575FE7A03C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7EBBF4E8-8FF7-465E-99E8-CBD05E7D8D68} = {7EBBF4E8-8FF7-465E-99E8-CBD05E7D8D68}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N8_Test", "N8_Test\N8_Test.csproj", "{8B60D862-5DB7-4846-9ED5-F903FB72E263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N8_Test", "N8_Test\N8_Test.csproj", "{8B60D862-5DB7-4846-9ED5-F903FB72E263}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -23,4 +23,8 @@
     <Folder Include="wwwroot\Tickets\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\N8_Data\N8_Data.csproj" />
+  </ItemGroup>
+
 </Project>

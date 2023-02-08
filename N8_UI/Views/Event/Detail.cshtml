@@ -1,0 +1,32 @@
+﻿@model Event
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h1>Event detail</h1>
+<table class="table-striped">
+    <thead>
+        <tr>
+            <th>Sponsor</th>
+            <th>Aantal tickets</th>
+            <th>Download</th>
+            <th>Send E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sponsor in Model.Sponsors)
+        {
+            <tr>
+                <td>@sponsor.Name</td>
+                <td>@sponsor.Tickets.Count()</td>
+                <td>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="Download">Download</a>
+                </td>
+                <td>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="SendEmail">Send Email</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
